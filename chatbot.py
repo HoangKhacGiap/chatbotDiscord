@@ -4,7 +4,7 @@ import time
 
 
 channelId = "1236923417668747315"
-token = "NzU2MTYxNTE4MjE0NzA5Mjc4.G_8eXn.hgJ_QsiC1_lUYDTnPclNbAP20Xxg4xMXscmhW0"
+# token = "NzU2MTYxNTE4MjE0NzA5Mjc4.G_8eXn.hgJ_QsiC1_lUYDTnPclNbAP20Xxg4xMXscmhW0"
 url = "https://discord.com/api/v9/channels/" + channelId + "/messages"
 headers = {
     "Authorization" : token
