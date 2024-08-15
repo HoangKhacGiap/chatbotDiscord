@@ -3,13 +3,16 @@ import random
 import time
 
 
-channelId = "1236923417668747315"
-# token = "NzU2MTYxNTE4MjE0NzA5Mjc4.G_8eXn.hgJ_QsiC1_lUYDTnPclNbAP20Xxg4xMXscmhW0"
+# channelId = "input your channel id here"
+# token = "input your token here"
+
+channelId = input("input your channel id here: ")
+token = input("input your token here: ")
+
 url = "https://discord.com/api/v9/channels/" + channelId + "/messages"
 headers = {
     "Authorization" : token
 }
-
 
 def send_message(random_time):
     payload = {
@@ -20,11 +23,6 @@ def send_message(random_time):
 
 interval_min = 1  # Minimum interval in seconds
 interval_max = 10  # Maximum interval in seconds
-
-# while True:
-#     interval = random.randint(interval_min, interval_max)
-#     send_message(interval)
-#     time.sleep(interval)
     
 # Get the number of iterations from the user
 num_iterations = int(input("Số lần test: "))
